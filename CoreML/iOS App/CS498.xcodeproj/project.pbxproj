@@ -10,7 +10,6 @@
 		7B322ADF22FEEDB2002C7C38 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B322ADE22FEEDB2002C7C38 /* Labels.swift */; };
 		7B322AE122FEFFE2002C7C38 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B322AE022FEFFE2002C7C38 /* Globals.swift */; };
 		7B43804B22B3C1730034AE3C /* Dataset in Resources */ = {isa = PBXBuildFile; fileRef = 7B43804A22B3C1730034AE3C /* Dataset */; };
-		7B43804D22B3C3410034AE3C /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 7B43804C22B3C3410034AE3C /* README.markdown */; };
 		7B43805322B3F2360034AE3C /* EvaluateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B43805222B3F2360034AE3C /* EvaluateViewController.swift */; };
 		7B43806322B422E00034AE3C /* HandsTuri.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7B43806222B422E00034AE3C /* HandsTuri.mlmodel */; };
 		7B43806522B424CD0034AE3C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B43806422B424CD0034AE3C /* Helpers.swift */; };
@@ -37,7 +36,7 @@
 		7BABEFF822B7E9B6005C8BCF /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BABEFF622B7E9B6005C8BCF /* SectionHeaderView.xib */; };
 		7BABEFFA22B7E9C2005C8BCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BABEFF922B7E9C2005C8BCF /* Main.storyboard */; };
 		7BDCA4B122E09DBC00AA1F57 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDCA4B022E09DBC00AA1F57 /* Models.swift */; };
-		7BE1EF3022BCD18500DC3AAE /* AddGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1EF2F22BCD18500DC3AAE /* AddGestureViewController.swift */; };
+		7BE1EF3022BCD18500DC3AAE /* AddFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1EF2F22BCD18500DC3AAE /* AddFaceViewController.swift */; };
 		7BE1EF3222BD1C6400DC3AAE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1EF3122BD1C6400DC3AAE /* GraphView.swift */; };
 		7BE1EF3422BD1CE600DC3AAE /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1EF3322BD1CE600DC3AAE /* ExampleCell.swift */; };
 		7BE1EF3622BD1CF400DC3AAE /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1EF3522BD1CF400DC3AAE /* SectionHeaderView.swift */; };
@@ -50,7 +49,6 @@
 		7B322ADE22FEEDB2002C7C38 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		7B322AE022FEFFE2002C7C38 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		7B43804A22B3C1730034AE3C /* Dataset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Dataset; path = ../Dataset; sourceTree = "<group>"; };
-		7B43804C22B3C3410034AE3C /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.markdown; path = ../README.markdown; sourceTree = "<group>"; };
 		7B43805222B3F2360034AE3C /* EvaluateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateViewController.swift; sourceTree = "<group>"; };
 		7B43806222B422E00034AE3C /* HandsTuri.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandsTuri.mlmodel; sourceTree = "<group>"; };
 		7B43806422B424CD0034AE3C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -79,7 +77,7 @@
 		7BABEFF622B7E9B6005C8BCF /* SectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		7BABEFF922B7E9C2005C8BCF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7BDCA4B022E09DBC00AA1F57 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		7BE1EF2F22BCD18500DC3AAE /* AddGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGestureViewController.swift; sourceTree = "<group>"; };
+		7BE1EF2F22BCD18500DC3AAE /* AddFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFaceViewController.swift; sourceTree = "<group>"; };
 		7BE1EF3122BD1C6400DC3AAE /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		7BE1EF3322BD1CE600DC3AAE /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
 		7BE1EF3522BD1CF400DC3AAE /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
@@ -138,7 +136,7 @@
 		7B43806822B5738B0034AE3C /* Data screen */ = {
 			isa = PBXGroup;
 			children = (
-				7BE1EF2F22BCD18500DC3AAE /* AddGestureViewController.swift */,
+				7BE1EF2F22BCD18500DC3AAE /* AddFaceViewController.swift */,
 				7B8AF1B620D8324E00DE58D5 /* DataViewController.swift */,
 				7BE1EF3322BD1CE600DC3AAE /* ExampleCell.swift */,
 				7BABEFF522B7E9B6005C8BCF /* ExampleCell.xib */,
@@ -185,7 +183,6 @@
 		7B8AF19820D8311600DE58D5 = {
 			isa = PBXGroup;
 			children = (
-				7B43804C22B3C3410034AE3C /* README.markdown */,
 				7B43804A22B3C1730034AE3C /* Dataset */,
 				7B43806122B422E00034AE3C /* Models */,
 				7B8AF1A320D8311600DE58D5 /* Sources */,
@@ -281,7 +278,6 @@
 				7B8AF1AC20D8311700DE58D5 /* Assets.xcassets in Resources */,
 				7BABEFFA22B7E9C2005C8BCF /* Main.storyboard in Resources */,
 				7BABEFF322B7E9A5005C8BCF /* EvaluateCell.xib in Resources */,
-				7B43804D22B3C3410034AE3C /* README.markdown in Resources */,
 				7B43804B22B3C1730034AE3C /* Dataset in Resources */,
 				7BABEFF822B7E9B6005C8BCF /* SectionHeaderView.xib in Resources */,
 			);
@@ -308,7 +304,7 @@
 				7B89B54F22B6C73D002DBA36 /* Predictor.swift in Sources */,
 				7B43807222B6783E0034AE3C /* CameraViewController.swift in Sources */,
 				7BE1EF3622BD1CF400DC3AAE /* SectionHeaderView.swift in Sources */,
-				7BE1EF3022BCD18500DC3AAE /* AddGestureViewController.swift in Sources */,
+				7BE1EF3022BCD18500DC3AAE /* AddFaceViewController.swift in Sources */,
 				7B72E0FC238FF11300A1F15F /* TrainingBatchProvider.swift in Sources */,
 				7B8AF1B720D8324E00DE58D5 /* DataViewController.swift in Sources */,
 				7B322ADF22FEEDB2002C7C38 /* Labels.swift in Sources */,
@@ -448,7 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MGCEKGP4Y4;
+				DEVELOPMENT_TEAM = AWZ2PVKJ9Y;
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MGCEKGP4Y4;
+				DEVELOPMENT_TEAM = AWZ2PVKJ9Y;
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -3,7 +3,7 @@ import UIKit
 /**
   View controller for the "Add Gesture" screen.
 */
-class AddGestureViewController: UIViewController, UITextFieldDelegate {
+class AddFaceViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet var textField: UITextField!
   @IBOutlet var saveButton: UIBarButtonItem!
 

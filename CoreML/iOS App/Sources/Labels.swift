@@ -7,7 +7,7 @@ class Labels {
   let maxLabels = 10
 
   // The dataset always has these three labels but the user can add their own.
-  let builtinLabelNames = [ "✊", "✋", "✌️" ]
+  let builtinLabelNames = [ "Name 0", "Name 1", "Name 2" ]
 
   // The names of the labels as chosen by the user (plus the built-in ones).
   var labelNames: [String] = []
@@ -34,7 +34,7 @@ class Labels {
   // k-NN does not have this restriction, and the label names inside the k-NN's
   // mlmodel are always the ones chosen by the user.
   lazy var internalLabelNames: [String] = {
-    builtinLabelNames + (0..<7).map { "user\($0)" }
+    builtinLabelNames + (3..<10).map { "Name\($0)" }
   }()
 
   // Which output neuron corresponds to which label name in the mlmodel file.

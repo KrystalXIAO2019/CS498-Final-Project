@@ -1,4 +1,6 @@
 import UIKit
+import AVKit
+import AVFoundation
 
 /**
   View controller for the "Training Data" and "Testing Data" screens.
@@ -107,24 +109,69 @@ class DataViewController: UITableViewController {
     picker.delegate = self
     picker.sourceType = sourceType
     picker.allowsEditing = true
+    // NOTE Modified by Minghao: Add video recording capability
+    picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: sourceType)!
     present(picker, animated: true)
   }
 }
 
 extension DataViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    // NOTE Modified by Minghao: Add support for extracting frames from video as images
+    print(info)
+    let mediaType = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerMediaType")] as! String
+    switch mediaType {
+        case "public.image":
+            print("Image selected")
+            let image = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
+            addImagesByLabel(images: [image])
+            break
+        case "public.movie":
+            print("Movie selected")
+            let videoURL = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerMediaURL")] as! URL
+            let asset: AVAsset = AVAsset(url: videoURL)
+            let duration:Float64 = CMTimeGetSeconds(asset.duration)
+            var generator:AVAssetImageGenerator!
+            generator = AVAssetImageGenerator(asset:asset)
+            generator.appliesPreferredTrackTransform = true
+            var frames: [UIImage] = []
+            
+            var index: Float64 = 0.0
+            while index < duration {
+                let time:CMTime = CMTimeMakeWithSeconds(Float64(index), preferredTimescale: 100)
+                print(time)
+                let image:CGImage
+                do {
+                    try image = generator.copyCGImage(at: time, actualTime: nil)
+                }catch {
+                    return
+                }
+                frames.append(UIImage(cgImage:image))
+                index += 0.5
+            }
+            
+            addImagesByLabel(images: frames)
+            
+            break
+        default:
+            break
+    }
     picker.dismiss(animated: true)
 
-    // Grab the image.
-    let image = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
-
-    // Add the image to the data model.
-    let label = labels.labelNames[pickPhotoForSection]
-    imagesByLabel.addImage(image, for: label)
-
-    // Refresh the table view.
-    let count = imagesByLabel.numberOfImages(for: label)
-    let indexPath = IndexPath(row: count - 1, section: pickPhotoForSection)
-    tableView.insertRows(at: [indexPath], with: .automatic)
   }
+    
+    func addImagesByLabel(images: [UIImage]) {
+        for image in images {
+            let label = labels.labelNames[pickPhotoForSection]
+            imagesByLabel.addImage(image, for: label)
+            let count = imagesByLabel.numberOfImages(for: label)
+            let indexPath = IndexPath(row: count - 1, section: pickPhotoForSection)
+            tableView.insertRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        print("Image/video picking canceled")
+        picker.dismiss(animated: true, completion: nil)
+    }
 }

@@ -25,7 +25,11 @@
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Take pictures of your hands!</string>
+	<string>Take pictures of users&apos; faces!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Access photo library for users&apos; faces. </string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Need for recording video</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
