@@ -60,6 +60,16 @@ class MenuViewController: UITableViewController {
       viewController.model = Models.loadTrainedNeuralNetwork()
       viewController.title = "Neural Network"
     }
+    else if segue.identifier == "RealTimeCameraNearestNeighbor" {
+        let viewController = segue.destination as! RealTimeCameraViewController
+        viewController.mlmodel = Models.loadTrainedNearestNeighbors()
+        viewController.title = "Realtime Camera Nearest Neighbor"
+    }
+    else if segue.identifier == "RealTimeCameraNeuralNetwork" {
+        let viewController = segue.destination as! RealTimeCameraViewController
+        viewController.mlmodel = Models.loadTrainedNeuralNetwork()
+        viewController.title = "Realtime Camera Neural Network"
+    }
   }
 
   @IBAction func loadBuiltInDataSet() {

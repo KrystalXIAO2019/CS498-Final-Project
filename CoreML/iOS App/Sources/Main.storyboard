@@ -161,8 +161,28 @@
                                             <segue destination="aMk-xY-Gzm" kind="show" identifier="CameraNearestNeighbors" id="520-cK-YgP"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Kwo-kj-Odu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WCt-Yl-tzh">
                                         <rect key="frame" x="20" y="419.33333206176758" width="350" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WCt-Yl-tzh" id="nLn-ch-Df8">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Realtime Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wdy-GN-oS1">
+                                                    <rect key="frame" x="20" y="0.0" width="290.66666666666669" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TDb-Ud-zzg" kind="show" identifier="RealTimeCameraNearestNeighbor" id="ckD-bq-rOx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Kwo-kj-Odu">
+                                        <rect key="frame" x="20" y="463.33333206176758" width="350" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kwo-kj-Odu" id="E18-Vp-9Kc">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
@@ -184,7 +204,7 @@
                             <tableViewSection headerTitle="Neural Network" id="ZDN-4a-Jke">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PJp-Vr-UH5" style="IBUITableViewCellStyleDefault" id="dis-Y2-eAf">
-                                        <rect key="frame" x="20" y="519.33333206176758" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="563.33333206176758" width="350" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dis-Y2-eAf" id="IJf-go-q0q">
                                             <rect key="frame" x="0.0" y="0.0" width="318.66666666666669" height="44"/>
@@ -204,7 +224,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="yFS-d8-eZE" style="IBUITableViewCellStyleDefault" id="M5T-kZ-tHb">
-                                        <rect key="frame" x="20" y="563.33333206176758" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="607.33333206176758" width="350" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M5T-kZ-tHb" id="JPi-Kj-FvI">
                                             <rect key="frame" x="0.0" y="0.0" width="318.66666666666669" height="44"/>
@@ -224,7 +244,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Lwq-vo-6IY" style="IBUITableViewCellStyleDefault" id="6Hc-10-PYa">
-                                        <rect key="frame" x="20" y="607.33333206176758" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="651.33333206176758" width="350" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Hc-10-PYa" id="pnp-Di-f0V">
                                             <rect key="frame" x="0.0" y="0.0" width="318.66666666666669" height="44"/>
@@ -243,8 +263,28 @@
                                             <segue destination="aMk-xY-Gzm" kind="show" identifier="CameraNeuralNetwork" id="mIb-cb-tNW"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Kgi-qW-6mV">
+                                        <rect key="frame" x="20" y="695.33333206176758" width="350" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kgi-qW-6mV" id="SCf-Z1-9sN">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Realtime Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PHg-qG-44x">
+                                                    <rect key="frame" x="20" y="0.0" width="290.66666666666669" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TDb-Ud-zzg" kind="show" identifier="RealTimeCameraNeuralNetwork" id="qzN-af-DeD"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="dis-jF-aET">
-                                        <rect key="frame" x="20" y="651.33333206176758" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="739.33333206176758" width="350" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dis-jF-aET" id="1iF-P6-FCg">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
@@ -268,7 +308,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="AOp-wY-jmn">
-                                        <rect key="frame" x="20" y="695.33333206176758" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="783.33333206176758" width="350" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AOp-wY-jmn" id="wEw-Cw-eWH">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
@@ -286,7 +326,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="pBe-kf-MC2">
-                                        <rect key="frame" x="20" y="739.33333206176758" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="827.33333206176758" width="350" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pBe-kf-MC2" id="TYZ-yM-77G">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
@@ -348,14 +388,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7G6-Es-eU7">
-                                <rect key="frame" x="186.5" y="54" width="227" height="227"/>
+                                <rect key="frame" x="81.666666666666686" y="98" width="227" height="227"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="227" id="gJx-LL-3zQ"/>
                                     <constraint firstAttribute="width" constant="227" id="p6X-vJ-tAB"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Results go here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OLm-TL-yzs">
-                                <rect key="frame" x="0.0" y="291" width="600" height="309"/>
+                                <rect key="frame" x="0.0" y="335" width="390" height="475"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -389,6 +429,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XH4-Ps-rv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4062" y="887"/>
+        </scene>
+        <!--Realtime Camera-->
+        <scene sceneID="OjY-2T-Abe">
+            <objects>
+                <viewController id="TDb-Ud-zzg" customClass="RealTimeCameraViewController" customModule="CS498" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zGU-8b-IOU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYd-zf-kvu">
+                                <rect key="frame" x="16" y="106" width="100" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddt-bx-J4a">
+                                <rect key="frame" x="0.0" y="161" width="390" height="649"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QhY-Q2-CyO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Realtime Camera" id="SKk-tk-wuG"/>
+                    <connections>
+                        <outlet property="cameraView" destination="ddt-bx-J4a" id="scd-IT-8gi"/>
+                        <outlet property="nameTag" destination="TYd-zf-kvu" id="Juf-HG-Xyr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AV-2t-QjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4996.9230769230771" y="885.78199052132697"/>
         </scene>
         <!--Train k-NN-->
         <scene sceneID="6cc-XM-t3k">
@@ -736,6 +810,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="QFT-uU-yyz"/>
+        <segue reference="qzN-af-DeD"/>
         <segue reference="mIb-cb-tNW"/>
         <segue reference="2j4-p5-qch"/>
     </inferredMetricsTieBreakers>

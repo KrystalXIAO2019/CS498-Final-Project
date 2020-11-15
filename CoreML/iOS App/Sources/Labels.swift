@@ -7,7 +7,7 @@ class Labels {
   let maxLabels = 10
 
   // The dataset always has these three labels but the user can add their own.
-  let builtinLabelNames = [ "Name 0", "Name 1", "Name 2" ]
+  let builtinLabelNames = [ "✊", "✋", "✌️" ]
 
   // The names of the labels as chosen by the user (plus the built-in ones).
   var labelNames: [String] = []
