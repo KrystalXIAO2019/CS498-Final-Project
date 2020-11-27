@@ -4,7 +4,7 @@ import CoreML
   Names of the models inside the app bundle or the app's Documents folder.
  */
 enum Models: String {
-  case emptyNearestNeighbors = "HandskNN"
+  case emptyNearestNeighbors = "FaceskNN"
   case trainedNearestNeighbors = "NearestNeighbors"
 
   case emptyNeuralNetwork = "HandsEmpty"

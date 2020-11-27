@@ -181,7 +181,7 @@ class TrainNearestNeighborsViewController: UITableViewController {
       // that it expects a CVPixelBuffer for the image instead of an MLFeatureValue.
 
       if let pixelBuffer = featureValue.imageBufferValue {
-        let featureProvider = HandskNNTrainingInput(image: pixelBuffer, label: trueLabel)
+        let featureProvider = FaceskNNTrainingInput(image: pixelBuffer, label: trueLabel)
         batchInputs.append(featureProvider)
       }
     }
