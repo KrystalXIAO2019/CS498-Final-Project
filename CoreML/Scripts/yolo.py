@@ -1,11 +1,5 @@
 import coremltools
-import coremltools.proto.FeatureTypes_pb2 as ft
-from coremltools.models.nearest_neighbors import KNearestNeighborsClassifierBuilder
-import copy
+# import coremltools.proto.FeatureTypes_pb2 as ft
 
-base_model = coremltools.models.MLModel("../Models/TinyYOLO.mlmodel")
-base_spec = base_model._spec
+# spec = coremltools.utils.load_spec("UltraLightFaceNet.mlmodel")
 
-layers = copy.deepcopy(base_spec.neuralNetwork.layers)
-
-print(layers[-1])

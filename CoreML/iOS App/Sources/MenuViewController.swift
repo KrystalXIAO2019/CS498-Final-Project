@@ -70,6 +70,15 @@ class MenuViewController: UITableViewController {
         viewController.mlmodel = Models.loadTrainedNeuralNetwork()
         viewController.title = "Realtime Camera Neural Network"
     }
+    else if segue.identifier == "TestYOLO" {
+        let viewController = segue.destination as! TestYOLOViewController
+        viewController.model = Models.loadTrainedNearestNeighbors()
+        viewController.title = "Test YOLO"
+    }
+//    else if segue.identifier == "TestUltraLight" {
+//        let viewController = segue.destination as! TestUltraLightViewController
+//        viewController.title = "Test Ultra Light"
+//    }
   }
 
   @IBAction func loadBuiltInDataSet() {

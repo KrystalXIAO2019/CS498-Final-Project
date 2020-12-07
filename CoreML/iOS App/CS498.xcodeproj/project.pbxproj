@@ -43,7 +43,12 @@
 		7BE1EF3822BD1D1700DC3AAE /* EvaluateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1EF3722BD1D1700DC3AAE /* EvaluateCell.swift */; };
 		7BE1EF3A22BD1D2500DC3AAE /* SummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1EF3922BD1D2500DC3AAE /* SummaryHeaderView.swift */; };
 		7BF7B37F214422CE0010448E /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7B37E214422CE0010448E /* UIImage+Resize.swift */; };
+		BE29D9722561E7D70038A22C /* FaceskNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BE29D9712561E7D70038A22C /* FaceskNN.mlmodel */; };
 		BEC74D182560A4DB004EB0F7 /* RealTimeCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC74D172560A4DB004EB0F7 /* RealTimeCameraViewController.swift */; };
+		BED21B872571A0F9002CE759 /* TinyYOLO.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BED21B862571A0F9002CE759 /* TinyYOLO.mlmodel */; };
+		BED21B8A2571A10C002CE759 /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED21B892571A10C002CE759 /* YOLO.swift */; };
+		BED21B902571C4F0002CE759 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED21B8F2571C4F0002CE759 /* BoundingBox.swift */; };
+		BED21B932571C5A9002CE759 /* TestYOLOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED21B922571C5A9002CE759 /* TestYOLOViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +90,12 @@
 		7BE1EF3722BD1D1700DC3AAE /* EvaluateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateCell.swift; sourceTree = "<group>"; };
 		7BE1EF3922BD1D2500DC3AAE /* SummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryHeaderView.swift; sourceTree = "<group>"; };
 		7BF7B37E214422CE0010448E /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		BE29D9712561E7D70038A22C /* FaceskNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FaceskNN.mlmodel; sourceTree = "<group>"; };
 		BEC74D172560A4DB004EB0F7 /* RealTimeCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeCameraViewController.swift; sourceTree = "<group>"; };
+		BED21B862571A0F9002CE759 /* TinyYOLO.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TinyYOLO.mlmodel; sourceTree = "<group>"; };
+		BED21B892571A10C002CE759 /* YOLO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
+		BED21B8F2571C4F0002CE759 /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		BED21B922571C5A9002CE759 /* TestYOLOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestYOLOViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,8 @@
 				7B43806622B527640034AE3C /* ImageDataset.swift */,
 				7B43806A22B574CA0034AE3C /* ImageLoader.swift */,
 				7B322ADE22FEEDB2002C7C38 /* Labels.swift */,
+				BED21B892571A10C002CE759 /* YOLO.swift */,
+				BED21B8F2571C4F0002CE759 /* BoundingBox.swift */,
 				7BDCA4B022E09DBC00AA1F57 /* Models.swift */,
 				7B89B54E22B6C73D002DBA36 /* Predictor.swift */,
 				7B89B55022B6D235002DBA36 /* Settings.swift */,
@@ -127,7 +139,9 @@
 		7B43806122B422E00034AE3C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BE29D9712561E7D70038A22C /* FaceskNN.mlmodel */,
 				7B43806C22B650650034AE3C /* HandsEmpty.mlmodel */,
+				BED21B862571A0F9002CE759 /* TinyYOLO.mlmodel */,
 				7B43806E22B6600D0034AE3C /* HandskNN.mlmodel */,
 				7B43806222B422E00034AE3C /* HandsTuri.mlmodel */,
 			);
@@ -165,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				7B43807122B6783E0034AE3C /* CameraViewController.swift */,
+				BED21B922571C5A9002CE759 /* TestYOLOViewController.swift */,
 				BEC74D172560A4DB004EB0F7 /* RealTimeCameraViewController.swift */,
 			);
 			name = "Camera screen";
@@ -298,6 +313,7 @@
 				7B72E0FA238DC2D100A1F15F /* History.swift in Sources */,
 				7BE1EF3222BD1C6400DC3AAE /* GraphView.swift in Sources */,
 				7B43806722B527640034AE3C /* ImageDataset.swift in Sources */,
+				BED21B902571C4F0002CE759 /* BoundingBox.swift in Sources */,
 				7BE1EF3822BD1D1700DC3AAE /* EvaluateCell.swift in Sources */,
 				7B8AF1A720D8311600DE58D5 /* MenuViewController.swift in Sources */,
 				7B43806B22B574CA0034AE3C /* ImageLoader.swift in Sources */,
@@ -307,11 +323,15 @@
 				7B72E0F9238DC2D100A1F15F /* NeuralNetworkTrainer.swift in Sources */,
 				7B89B54F22B6C73D002DBA36 /* Predictor.swift in Sources */,
 				7B43807222B6783E0034AE3C /* CameraViewController.swift in Sources */,
+				BED21B932571C5A9002CE759 /* TestYOLOViewController.swift in Sources */,
+				BED21B8A2571A10C002CE759 /* YOLO.swift in Sources */,
 				7BE1EF3622BD1CF400DC3AAE /* SectionHeaderView.swift in Sources */,
+				BED21B872571A0F9002CE759 /* TinyYOLO.mlmodel in Sources */,
 				7BE1EF3022BCD18500DC3AAE /* AddFaceViewController.swift in Sources */,
 				7B72E0FC238FF11300A1F15F /* TrainingBatchProvider.swift in Sources */,
 				7B8AF1B720D8324E00DE58D5 /* DataViewController.swift in Sources */,
 				7B322ADF22FEEDB2002C7C38 /* Labels.swift in Sources */,
+				BE29D9722561E7D70038A22C /* FaceskNN.mlmodel in Sources */,
 				7BDCA4B122E09DBC00AA1F57 /* Models.swift in Sources */,
 				7B43806F22B6600D0034AE3C /* HandskNN.mlmodel in Sources */,
 				7B43806522B424CD0034AE3C /* Helpers.swift in Sources */,
@@ -448,7 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AWZ2PVKJ9Y;
+				DEVELOPMENT_TEAM = P8FH6DCT3U;
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,7 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AWZ2PVKJ9Y;
+				DEVELOPMENT_TEAM = P8FH6DCT3U;
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
